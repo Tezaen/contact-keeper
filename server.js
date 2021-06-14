@@ -22,7 +22,7 @@ app.use('/api/auth', auth);
 app.use('/api/contacts', contacts);
 
 // Server statci assets in production
-if (process.env.NODE_ENV === ' production') {
+if (process.env.NODE_ENV === 'production') {
     // Set a static folder
     app.use(express.static('client/build'));
 
